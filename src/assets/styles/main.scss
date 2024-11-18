@@ -1,0 +1,55 @@
+@import 'variables';
+@import '../fonts/montserrat/stylesheet.css';
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  color: $main;
+  background-color: $background-main;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px;
+
+  @media only screen and (max-width: 1439px) {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media only screen and (max-width: 359px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
